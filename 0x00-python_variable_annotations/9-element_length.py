@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+        accpets a list of strings as input and returns a list of tuples.
+        Each tuple contains an element from the input list and its length.
+"""
 from typing import List, Tuple, Iterable, Sequence
 
 
