@@ -2,12 +2,12 @@
 """
     function that accepts an argument as a float and return it as a float
 """
-# import math
+import math
 
 
 def floor(n: float) -> float:
     """
         accepts an argument as a float and return it as a float
     """
-    # return math.floor(n)
-    return n
+    return math.floor(n)
+    # return n
