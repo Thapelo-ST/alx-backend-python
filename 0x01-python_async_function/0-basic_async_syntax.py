@@ -5,7 +5,7 @@ import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """ 
+    """
     function that takes an agrument(optional) and returns a
     max delay in seconds.
     """
