@@ -67,6 +67,11 @@ class TestGetJson(unittest.TestCase):
     """
     @patch('requests.get')
     def test_get_json(self, mock_get):
+        """test_get_json
+
+        Args:
+            mock_get (dict): mock values
+        """
         # Define test cases
         test_cases = [
             {"test_url": "http://example.com",
@@ -112,11 +117,23 @@ class TestMemoize(unittest.TestCase):
         """Test memoize function
         """
         class TestClass:
+            """Test class testing the properties
+            """
             def a_method(self):
+                """gets a method
+
+                Returns:
+                    int
+                """
                 return 42
 
             @memoize
             def a_property(self):
+                """sets a method
+
+                Returns:
+                    method: setting the method get before
+                """
                 return self.a_method()
 
         # Create an instance of TestClass
