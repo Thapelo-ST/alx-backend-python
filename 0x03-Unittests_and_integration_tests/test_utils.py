@@ -99,7 +99,6 @@ class TestGetJson(unittest.TestCase):
 
                 mock_get.assert_called_once_with(test_url)
 
-                # Assert that the result is equal to the expected test_payload
                 self.assertEqual(result, test_payload)
 
                 # Reset the mock for the next iteration
