@@ -32,11 +32,11 @@ class TestAccessNestedMap(unittest.TestCase):
     """Tests the execption errors
 
         Args:
-            nested_map
-            path
+            nested_map (dict): The nested map to access.
+            path (tuple): The path to access in the nested map.
 
         Raises:
-            KeyError
+            KeyError: If the access operation results in a KeyError.
     """
     @parameterized.expand([
         ({}, ("a",)),
@@ -59,11 +59,6 @@ class TestAccessNestedMap(unittest.TestCase):
                     value = value[key]
                 else:
                     raise KeyError(key)
-
-
-"""
-    tests the get_json function in the unittest cases
-"""
 
 
 class TestGetJson(unittest.TestCase):
@@ -104,10 +99,6 @@ class TestGetJson(unittest.TestCase):
 
                 # Reset the mock for the next iteration
                 mock_get.reset_mock()
-
-
-"""class testing memoize
-"""
 
 
 class TestMemoize(unittest.TestCase):
